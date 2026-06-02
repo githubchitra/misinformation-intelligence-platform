@@ -2,6 +2,8 @@
 
 This platform provides an end-to-end suite for detecting, explaining, and fact-checking news misinformation. It combines deep learning (DistilBERT), explainable AI (LIME/SHAP), and real-time retrieval-augmented fact-checking (RAG).
 
+**Live Demo**: [https://misinformation-intelligence-platform.streamlit.app/](https://misinformation-intelligence-platform.streamlit.app/)
+
 ## 🚀 Architecture
 - **Model**: DistilBERT fine-tuned on the LIAR dataset.
 - **Explainability**: LIME (Local Interpretable Model-agnostic Explanations) and SHAP (SHapley Additive exPlanations).
