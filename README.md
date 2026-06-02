@@ -17,7 +17,7 @@ This platform provides an end-to-end suite for detecting, explaining, and fact-c
 ### 1. Environment Setup
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/githubchitra/misinformation-intelligence-platform.git
 cd FNDM
 
 # Install dependencies
