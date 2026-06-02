@@ -1,0 +1,40 @@
+stages:
+  preprocess:
+    cmd: python preprocess.py
+    deps:
+      - preprocess.py
+    outs:
+      - data/processed/train.csv
+      - data/processed/validation.csv
+      - data/processed/test.csv
+      - data/processed/class_weights.txt
+
+  baseline:
+    cmd: python baseline.py
+    deps:
+      - baseline.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+    outs:
+      - models/baseline_model.joblib
+      - models/baseline_metrics.txt
+
+  train:
+    cmd: python train.py --quick_run
+    deps:
+      - train.py
+      - data/processed/train.csv
+      - data/processed/validation.csv
+      - data/processed/class_weights.txt
+    outs:
+      - models/distilbert_fake_news
+
+  evaluate:
+    cmd: python evaluate.py
+    deps:
+      - evaluate.py
+      - data/processed/test.csv
+      - models/baseline_model.joblib
+      - models/distilbert_fake_news
+    outs:
+      - models/comparison_report.csv

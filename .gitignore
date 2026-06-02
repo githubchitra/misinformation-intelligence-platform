@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Models and Data (Large files)
+models/
+data/raw/
+data/processed/
+mlruns/
+results/
+*.safetensors
+*.pth
+*.joblib
+*.bin
+
+# DVC
+.dvc/cache
+.dvc/tmp
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
