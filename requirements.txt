@@ -1,25 +1,31 @@
-transformers
-datasets
-torch
-scikit-learn
-pandas
-numpy
-mlflow
-dvc
-lime
-shap
+# Core API & UI (Required)
 fastapi
 uvicorn
 streamlit
-python-multipart
 requests
+pydantic
+python-multipart
+
+# Machine Learning & NLP
+transformers
+torch
+datasets<3.0.0
+scikit-learn
+pandas
+numpy
+accelerate
+
+# Explainability
+lime
+shap
 matplotlib
 seaborn
-pydantic
-python-dotenv
-beautifulsoup4
-google-search-results
-openai
-langchain
+
+# Fact-Checking & Search
 duckduckgo-search
-accelerate
+beautifulsoup4
+python-dotenv
+
+# MLOps
+mlflow
+dvc
